@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title></title>
+	<style type="text/css">
+	
+		table{
+			height: 200px;
+			width:  300px;
+			border-collapse: collapse;
+			margin: 0 auto;
+			
+		}
+
+		.newb{
+			margin: 0 auto;
+			width:450px;
+			height: 225px;
+			border:5px #ef86a0 dotted;
+			background-color:#e3b3e966;
+			border-radius: 4px;
+			
+		}
+		input[type="text"],input[type="submit"],input[type="password"]{
+			border-radius: 2px;
+			border:1px solid #0000ff4d;
+			background-color:pink;
+			width: 135px;
+			height: 23px;
+		}
+		input[type="text"]:hover,input[type="password"]:hover,input[type="submit"]:hover{
+			background-color: #ffc0cb80;
+
+
+		}
+
+		td{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<div class="newb">
+	<form action="repsw.php" method="post">
+		<table ><caption >修改密码</caption> 
+			<tr>
+				<td>用户名</td>
+				<td>
+					<input type="text" name="username" required="required">
+				</td>
+
+			</tr>
+			<tr>
+				<td>旧密码</td>
+				<td>
+					<input type="password" name="oldpass" required="required">
+				</td>
+			</tr>
+			<tr>
+				<td>新密码</td>
+				<td>
+					<input type="password" name="newpass" required="required">
+				</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td><input type="submit" value="提交" required="required"></td>
+
+			</tr>
+
+		</table>
+	</form>
+</div>
+</body>
+</html>
